@@ -1,14 +1,17 @@
 :root {
     --background-header-color: orange;
-    --details-items-color: red;
+    --details-items-color: green;
+    --percent-sales-color: red;
     --price-sale-color: rgb(255, 55, 55);
-    --percent-sales-color: green;
-    --light-color: white;
+    --lighter-color: white;
+    --light-color: gray;
     --dark-color: black;
 }
 
-body {
-    background-color: #cecece;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /*#region Utilities*/
@@ -17,19 +20,105 @@ body {
     margin: auto;
 }
 
-.debug {
-    border: 1px solid black;
+
+
+.absolute {
+    position: absolute;
 }
 
 /*#endregion Utilities*/
 
 /*#region Header*/
-
 .header-container {
     padding: 10px;
+    background-color: var(--background-header-color);
+}
+
+.header-container>div {
     display: flex;
     justify-content: space-between;
 }
 
 
 /*#endregion Header*/
+
+/*#region Main*/
+
+.main-container {
+    padding: 30px;
+    display: flex;
+}
+
+.flex-top-bottom {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+
+}
+
+.img img {
+    width: 100%;
+}
+
+.top-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+
+}
+
+.hearts-container {
+    top: 10px;
+    right: 0px;
+    background-color: var(--light-color);
+    padding: 5px 10px;
+}
+
+.percent-sales-container {
+    bottom: 30px;
+    padding: 2px 8px;
+    background-color: var(--percent-sales-color);
+    color: var(--lighter-color);
+}
+
+.article-description-container {
+    bottom: 30px;
+    left: 50px;
+    padding: 2px 8px;
+    background-color: var(--details-items-color);
+    color: var(--lighter-color);
+}
+
+.article-name {
+    font-weight: bold;
+
+}
+
+.sale-price {
+    color: var(--price-sale-color);
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.original-price {
+    text-decoration: line-through;
+}
+
+/*#endregion Main*/
+
+/*#region Footer*/
+
+.footer-container {
+    padding: 10px;
+    background-color: var(--dark-color);
+    color: var(--lighter-color);
+
+}
+
+.footer-container>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*#endregion Footer*/
