@@ -1,0 +1,34 @@
+:root {
+    --background-header-color: orange;
+    --details-items-color: red;
+    --price-sale-color: rgb(255, 55, 55);
+    --percent-sales-color: green;
+    --light-color: white;
+    --dark-color: black;
+}
+
+body {
+    background-color: #cecece;
+}
+
+/*#region Utilities*/
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+/*#endregion Utilities*/
+
+/*#region Header*/
+
+.header-container {
+    height: 200px;
+    display: flex;
+    justify-content: space;
+}
+
+/*#endregion Header*/
