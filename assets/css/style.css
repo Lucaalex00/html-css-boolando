@@ -1,5 +1,5 @@
 :root {
-    --background-header-color: orange;
+    --background-header-color: rgb(246, 109, 59);
     --details-items-color: green;
     --percent-sales-color: red;
     --price-sale-color: rgb(255, 55, 55);
@@ -47,11 +47,13 @@
 .main-container {
     padding: 30px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-top-bottom {
     display: flex;
     flex-direction: column;
+    padding: 5px;
     width: calc(100%/3);
 
 }
