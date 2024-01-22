@@ -26,9 +26,9 @@ body {
 /*#region Header*/
 
 .header-container {
-    height: 200px;
+    padding: 10px;
     display: flex;
-    justify-content: space;
+    justify-content: space-between;
 }
 
 
