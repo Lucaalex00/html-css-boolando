@@ -27,16 +27,84 @@
 }
 
 /*#endregion Utilities*/
+/*#region hidden*/
+.hidden {
+    display: none;
+}
+
+.first:hover img {
+    display: none;
+    cursor: pointer;
+}
+
+.first:hover .hidden {
+    display: block;
+}
+
+.second:hover img {
+    display: none;
+    cursor: pointer;
+}
+
+.second:hover .hidden {
+    display: block;
+}
+
+.third:hover img {
+    display: none;
+    cursor: pointer;
+}
+
+.third:hover .hidden {
+    display: block;
+}
+
+.fourth:hover img {
+    display: none;
+    cursor: pointer;
+}
+
+.fourth:hover .hidden {
+    display: block;
+}
+
+.fifth:hover img {
+    display: none;
+    cursor: pointer;
+}
+
+.fifth:hover .hidden {
+    display: block;
+}
+
+.six:hover img {
+    display: none;
+    cursor: pointer;
+}
+
+.six:hover .hidden {
+    display: block;
+}
+
+/*#endregion hidden*/
 
 /*#region Header*/
 .header-container {
     padding: 10px;
     background-color: var(--background-header-color);
+    color: var(--lighter-color);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .header-container>div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.logo>img {
+    width: 100px;
 }
 
 
@@ -45,7 +113,7 @@
 /*#region Main*/
 
 .main-container {
-    padding: 30px;
+    padding: 50px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -115,7 +183,6 @@
     padding: 10px;
     background-color: var(--dark-color);
     color: var(--lighter-color);
-
 }
 
 .footer-container>div {
